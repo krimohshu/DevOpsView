@@ -1,0 +1,429 @@
+# ========================================
+# DevOpsView - Comprehensive .gitignore
+# ========================================
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# ============ Terraform ============
+# Local .terraform directories
+**/.terraform/*
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+terraform.tfvars
+*.auto.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan files
+*.tfplan
+*.tfplan.json
+plan.out
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Terraform variables with sensitive data
+secrets.tfvars
+*.secret.tfvars
+
+# ============ Ansible ============
+*.retry
+*.retry.yml
+ansible.log
+.vault_pass
+vault_password
+inventory/hosts
+*.vault
+
+# ============ Kubernetes ============
+# Kubernetes secrets
+*secret*.yaml
+*secret*.yml
+secrets/
+kubeconfig
+*.kubeconfig
+.kube/config
+
+# Helm
+charts/**/*.tgz
+.helmignore
+helm/charts/*/charts/
+
+# ============ Docker ============
+docker-compose.override.yml
+.dockerignore
+
+# ============ AWS ============
+# AWS credentials
+.aws/credentials
+.aws/config
+*.pem
+*.key
+
+# AWS specific
+.elasticbeanstalk/
+.aws-sam/
+
+# ============ CI/CD ============
+# GitLab
+.gitlab-ci-local/
+
+# Jenkins
+.jenkins/
+
+# GitHub Actions
+.github/workflows/*.log
+
+# ============ Security & Secrets ============
+# Vault
+.vault-token
+vault-token
+unseal-keys.json
+root-token.txt
+
+# General secrets
+*.secret
+*.secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+id_rsa*
+known_hosts
+secret*
+*_rsa
+*_rsa.pub
+credentials
+credentials.*
+*.credentials
+
+# OPA
+opa-bundle/
+
+# SSL/TLS Certificates
+*.csr
+*.srl
+ca-key.pem
+ca-cert.pem
+
+# ============ Observability ============
+# Prometheus
+prometheus/data/
+thanos/data/
+
+# Grafana
+grafana/data/
+grafana.db
+sessions/
+
+# Logs
+*.log
+logs/
+log/
+*.log.*
+
+# Splunk
+splunk/var/
+
+# ELK
+elasticsearch/data/
+logstash/data/
+
+# ============ IDE & Editors ============
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# PyCharm
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+.projectile
+
+# ============ Operating Systems ============
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ============ Testing ============
+# Test reports
+test-results/
+test-reports/
+junit.xml
+pytest-report.html
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage/
+*.lcov
+
+# K6 load testing
+k6-results/
+summary.json
+
+# Chaos engineering
+litmus-results/
+chaos-reports/
+
+# ============ Backup & Temporary ============
+*.bak
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.backup/
+backup/
+tmp/
+temp/
+
+# Velero backups (local)
+velero/backups/
+
+# ============ Documentation Build ============
+site/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+node_modules/
+
+# ============ Databases ============
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+dump.rdb
+
+# ============ Node.js (for Backstage) ============
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ============ Monitoring & Metrics ============
+# Prometheus
+prometheus/data/
+prometheus/*.db
+
+# Grafana
+grafana.ini
+grafana/provisioning/
+grafana/sessions/
+
+# ============ Container Registries ============
+# Harbor
+harbor/data/
+
+# ECR login tokens
+ecr-login-token
+
+# ============ Certificates ============
+certs/
+certificates/
+*.crt
+*.key
+*.pem
+*.p12
+
+# Let's Encrypt
+certbot/
+
+# ============ Misc ============
+.cache/
+.local/
+.config/
+*.pid
+*.seed
+*.pid.lock
+.npm-cache/
+.yarn-cache/
+
+# MacOS Finder
+.DS_Store
+
+# Thumbnails
+._*
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Package files
+*.jar
+*.war
+*.ear
+*.class
+
+# ============ Application Specific ============
+# FastAPI
+.cache/
+fastapi_cache/
+
+# Flask
+instance/
+.webassets-cache
+
+# ============ Keep Empty Directories ============
+!.gitkeep
+!**/.gitkeep
+
+# ============ Documentation ============
+# But keep markdown files
+!*.md
+!**/*.md
+
+# ============ Allow Specific Files ============
+# Allow example files
+!.env.example
+!config.example.yaml
+!secrets.example.yaml
+!terraform.tfvars.example

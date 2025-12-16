@@ -1,0 +1,52 @@
+# ============================================================================
+# Task Service - Development Dependencies
+# ============================================================================
+# Additional dependencies for development only
+# Install with: pip install -r requirements-dev.txt
+
+# First, install production dependencies
+-r requirements.txt
+
+# ============================================================================
+# TESTING & COVERAGE
+# ============================================================================
+pytest==7.4.3                       # Testing framework
+pytest-asyncio==0.21.1              # Async test support
+pytest-cov==4.1.0                   # Code coverage measurement
+pytest-mock==3.12.0                 # Mocking support
+pytest-xdist==3.5.0                 # Parallel test execution
+faker==20.1.0                       # Generate fake data for tests
+httpx==0.25.2                       # Required by TestClient
+
+# ============================================================================
+# CODE QUALITY & FORMATTING
+# ============================================================================
+black==23.11.0                      # Opinionated code formatter
+isort==5.12.0                       # Import statement organizer
+flake8==6.1.0                       # Style guide enforcement (linting)
+pylint==3.0.2                       # Additional code analysis
+mypy==1.7.0                         # Static type checker
+
+# ============================================================================
+# SECURITY SCANNING
+# ============================================================================
+bandit==1.7.5                       # Security issue scanner
+safety==2.3.5                       # Check for known vulnerabilities
+
+# ============================================================================
+# DEBUGGING & PROFILING
+# ============================================================================
+ipython==8.17.2                     # Enhanced Python shell
+ipdb==0.13.13                       # IPython debugger
+memory-profiler==0.61.0             # Profile memory usage
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+mkdocs==1.5.3                       # Documentation generator
+mkdocs-material==9.4.14             # Material theme for docs
+
+# ============================================================================
+# PRE-COMMIT HOOKS
+# ============================================================================
+pre-commit==3.5.0                   # Git pre-commit hook framework
