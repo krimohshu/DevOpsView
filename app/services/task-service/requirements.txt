@@ -15,7 +15,7 @@ uvicorn[standard]==0.24.0           # ASGI server (runs FastAPI apps)
 # DATABASE & ORM
 # ============================================================================
 sqlalchemy==2.0.23                  # SQL toolkit and ORM (Object-Relational Mapping)
-psycopg2-binary==2.9.9              # PostgreSQL adapter for Python
+psycopg2-binary==2.9.11              # PostgreSQL adapter for Python
 alembic==1.12.1                     # Database migration tool (for schema changes)
 
 # ============================================================================
