@@ -21,7 +21,7 @@ alembic==1.12.1                     # Database migration tool (for schema change
 # ============================================================================
 # DATA VALIDATION & SETTINGS
 # ============================================================================
-pydantic==2.5.0                     # Data validation using Python type hints
+pydantic==2.12.5                     # Data validation using Python type hints
 pydantic-settings==2.1.0            # Settings management from environment variables
 
 # ============================================================================
