@@ -14,7 +14,6 @@
 - [Overview](#overview)
 - [Core Pillars](#core-pillars)
 - [Technology Stack](#technology-stack)
-- [20-Week Learning Curriculum](#20-week-learning-curriculum)
 - [Quick Start](#quick-start)
 - [Project Structure](#project-structure)
 - [Key Features](#key-features)
@@ -137,208 +136,6 @@
 - **Languages**: Python (FastAPI, Flask), Bash, Go
 - **Testing**: pytest, K6, LitmusChaos, OWASP ZAP
 - **Dependency Management**: Renovate, Dependabot
-
----
-
-## 📚 20-Week Learning Curriculum
-
-### **Week 1-2: Foundation & Microservices** ✅
-- Project structure & Git workflow (trunk-based development)
-- Python microservices (FastAPI, Flask)
-- Docker containerization & best practices
-- Testing (pytest, >85% coverage)
-- Pre-commit hooks & code quality
-
-**Deliverables**: 
-- 4 production-ready microservices
-- Comprehensive test suites
-- Docker multi-stage builds
-
-📖 [Week 1-2 Tutorial →](docs/tutorials/week-01-02-foundation.md)
-
----
-
-### **Week 3-4: Kubernetes & Package Management** 🎯
-- Kubernetes fundamentals (Pods, Deployments, Services)
-- Helm charts creation (20+ comprehensive charts)
-- Kustomize overlays (dev/staging/prod)
-- Helmfile orchestration
-- Local K8s setup (Kind/Minikube)
-
-**Deliverables**:
-- Production-grade Helm charts with HPA, PDB, ServiceMonitors
-- Multi-environment configurations
-- Network policies & RBAC
-
-📖 [Week 3-4 Tutorial →](docs/tutorials/week-03-04-kubernetes.md)
-
----
-
-### **Week 5-6: CI/CD Pipelines** 🔄
-- GitLab CI/CD three-phase pipeline (Build→Deploy→Release)
-- GitHub Actions workflows
-- Jenkins declarative pipelines
-- Quality gates & security scanning
-- Automated testing in pipelines
-- Trunk-based development workflow
-
-**Deliverables**:
-- Complete three-phase pipeline
-- Automated security scanning (SAST/DAST)
-- 95% deployment time reduction
-
-📖 [Week 5-6 Tutorial →](docs/tutorials/week-05-06-cicd.md)
-
----
-
-### **Week 7-9: AWS Infrastructure & IaC** ☁️
-- **Core Services**: EC2, VPC, IAM, Security Groups
-- **Container Services**: EKS, ECS, ECR (with scanning)
-- **Serverless**: Lambda, Step Functions, API Gateway
-- **Data Services**: RDS Multi-AZ, DynamoDB, ElastiCache
-- **Storage & CDN**: S3, CloudFront
-- **Data Engineering**: Glue, Athena (10TB+ daily processing)
-- **Streaming**: MSK (Managed Kafka)
-- **Terraform**: Modules for 15+ AWS services
-- **Ansible**: Configuration management & security hardening
-
-**Deliverables**:
-- Multi-account AWS architecture
-- Terraform modules for all services
-- Multi-environment setup (dev/staging/prod)
-- Cost optimization (40% reduction)
-
-📖 [Week 7-9 Tutorial →](docs/tutorials/week-07-09-aws-infrastructure.md)
-
----
-
-### **Week 10-11: Security & Governance** 🔒
-- HashiCorp Vault setup & policies
-- OPA policy enforcement (95% enforcement rate)
-- SAST scanning (SonarQube, Bandit, Semgrep)
-- DAST scanning (OWASP ZAP)
-- Container security (Trivy, Snyk, AWS ECR)
-- Secret scanning (Gitleaks)
-- IaC security (Checkov, tfsec)
-- Compliance automation (SOC 2, ISO 27001)
-
-**Deliverables**:
-- Zero critical security findings
-- 96% faster vulnerability remediation
-- Automated secret rotation
-- Complete compliance documentation
-
-📖 [Week 10-11 Tutorial →](docs/tutorials/week-10-11-security.md)
-
----
-
-### **Week 12-15: Observability Excellence** 📊
-- **Metrics**: Prometheus & Thanos (2+ year retention, 80% cost reduction)
-- **Instrumentation**: OpenTelemetry (Python auto-instrumentation)
-- **Dashboards**: 25+ Grafana dashboards (SLO/SLI, business metrics)
-- **Logging**: 
-  - ELK Stack (AWS OpenSearch, multi-pipeline Logstash)
-  - Splunk Enterprise SIEM
-  - Loki cloud-native logs
-- **Tracing**: Jaeger distributed tracing (100% trace coverage)
-- **AWS Native**: CloudWatch, X-Ray integration
-- **Alerting**: AlertManager, PagerDuty, Opsgenie (95% accuracy)
-
-**Deliverables**:
-- 70% MTTR reduction
-- 93% MTTD reduction
-- Complete observability platform
-- 2-minute detection time
-
-📖 [Week 12-15 Tutorial →](docs/tutorials/week-12-15-observability.md)
-
----
-
-### **Week 16: Connectivity & Service Mesh** 🌐
-- Istio service mesh deployment
-- mTLS encryption & authentication
-- Traffic management (Canary, Blue-Green)
-- Circuit breaking & fault injection
-- Cert-Manager SSL automation (Let's Encrypt)
-- External DNS automation
-- API Gateway patterns
-
-**Deliverables**:
-- Zero-trust networking
-- Automated certificate management
-- Progressive delivery patterns
-
-📖 [Week 16 Tutorial →](docs/tutorials/week-16-connectivity.md)
-
----
-
-### **Week 17: Orchestration & GitOps** ⚡
-- ArgoCD GitOps (App of Apps pattern, sync waves)
-- FluxCD comparison & implementation
-- Argo Rollouts (automated canary analysis)
-- Velero backup & disaster recovery (15min RPO, 1hr RTO)
-- Multi-cluster management
-
-**Deliverables**:
-- 100% declarative deployments
-- 70% faster deployment time
-- Automated rollback capabilities
-
-📖 [Week 17 Tutorial →](docs/tutorials/week-17-gitops.md)
-
----
-
-### **Week 18: Event Streaming & Platform Engineering** 🎪
-- Apache Kafka (AWS MSK) setup
-- 50+ topics, Schema Registry, Kafka Connect
-- Monitoring Kafka with Prometheus
-- Backstage developer portal
-- Service catalog (50+ services)
-- TechDocs & scaffolder templates
-- Golden paths for common patterns
-
-**Deliverables**:
-- Event-driven architecture
-- 50% developer velocity improvement
-- 2-day onboarding (down from 2 weeks)
-
-📖 [Week 18 Tutorial →](docs/tutorials/week-18-platform-engineering.md)
-
----
-
-### **Week 19: Testing & Chaos Engineering** 🧪
-- Unit testing (pytest, >85% coverage)
-- Integration & E2E testing
-- K6 load testing (performance baselines)
-- LitmusChaos chaos engineering
-- Contract testing
-- Security testing (OWASP ZAP automation)
-
-**Deliverables**:
-- Comprehensive test strategy
-- Performance benchmarks
-- Chaos validation reports
-
-📖 [Week 19 Tutorial →](docs/tutorials/week-19-testing-chaos.md)
-
----
-
-### **Week 20: Production Readiness & FinOps** 💰
-- Cost optimization strategies (40% reduction)
-- SLO/SLI definitions (99.95% availability)
-- Error budgets & burn rate alerts
-- Complete documentation
-- Architecture Decision Records (ADRs)
-- Runbooks & incident response
-- Production readiness checklist
-
-**Deliverables**:
-- Production-ready platform
-- Complete documentation
-- FinOps implementation
-- Career portfolio
-
-📖 [Week 20 Tutorial →](docs/tutorials/week-20-production-finops.md)
 
 ---
 
@@ -468,8 +265,7 @@ DevOpsView/
 └── docs/                         # Comprehensive Documentation
     ├── architecture/             # System design
     ├── adr/                      # Architecture Decision Records
-    ├── runbooks/                 # Operational guides
-    └── tutorials/                # 20-week curriculum
+    └── runbooks/                 # Operational guides
 ```
 
 📖 [Complete Structure Documentation →](docs/architecture/project-structure.md)
@@ -527,11 +323,6 @@ DevOpsView/
 ---
 
 ## 📖 Documentation
-
-### **Getting Started**
-- [Installation Guide](docs/tutorials/01-getting-started.md)
-- [Local Development](docs/tutorials/02-local-development.md)
-- [Deployment Guide](docs/tutorials/03-deploy-to-dev.md)
 
 ### **Architecture**
 - [System Overview](docs/architecture/overview.md)
@@ -630,17 +421,16 @@ Technologies: AWS • Kubernetes • Terraform • GitLab CI/CD • Prometheus �
 
 ## 🗺️ Roadmap
 
-- [ ] Week 1-2: Foundation & Microservices ✅
-- [ ] Week 3-4: Kubernetes & Helm ✅
-- [ ] Week 5-6: CI/CD Pipelines ✅
-- [ ] Week 7-9: AWS Infrastructure ✅
-- [ ] Week 10-11: Security & Governance 🔄
-- [ ] Week 12-15: Observability ⏳
-- [ ] Week 16: Connectivity ⏳
-- [ ] Week 17: GitOps ⏳
-- [ ] Week 18: Platform Engineering ⏳
-- [ ] Week 19: Testing & Chaos ⏳
-- [ ] Week 20: Production Readiness ⏳
+- [x] Phase 1: Foundation & Microservices
+- [x] Phase 2: Testing & Quality Assurance
+- [ ] Phase 3: Docker Containerization
+- [ ] Phase 4: Kubernetes & Helm
+- [ ] Phase 5: CI/CD Pipelines
+- [ ] Phase 6: AWS Infrastructure
+- [ ] Phase 7: Security & Governance
+- [ ] Phase 8: Observability
+- [ ] Phase 9: Connectivity & Service Mesh
+- [ ] Phase 10: GitOps & Platform Engineering
 
 ---
 
