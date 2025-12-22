@@ -21,7 +21,7 @@ httpx==0.25.2                       # Required by TestClient
 # ============================================================================
 # CODE QUALITY & FORMATTING
 # ============================================================================
-black==23.11.0                      # Opinionated code formatter
+black==23.12.1                      # Opinionated code formatter
 isort==5.12.0                       # Import statement organizer
 flake8==6.1.0                       # Style guide enforcement (linting)
 pylint==3.0.2                       # Additional code analysis
